@@ -1,0 +1,354 @@
+<!doctype html>
+<html amp>
+<head>
+  <title>Theranos - lessons for fintechs  start-ups</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1">
+  <link rel="canonical" href="theranos-lessons-for-fintechs-start-ups.html">
+  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+  <style amp-custom>/* @group type scale */
+
+body {
+  font-size: 1em;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+p, ul, ol, blockquote {
+  margin-top: 1.45em;
+  margin-bottom: 1.45em;
+}
+
+blockquote {
+  font-style: italic;
+  color: #888;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 1.414em;
+  border-left: 1px solid #eee;
+}
+
+h1, h2, h3, h4 {
+  margin: 1.414em 0 0.5em;
+  font-weight: inherit;
+  line-height: 1.2;
+  color: #111;
+}
+
+h1 {
+  font-size: 2.074em;
+}
+
+h2 {
+  font-size: 1.728em;
+}
+
+h3 {
+  font-size: 1.44em;
+}
+
+h4 {
+  font-size: 1.2em;
+}
+
+blockquote,
+.amp-article-quote-block-source,
+.amp-article-original-source {
+  font-size: 0.833em;
+}
+
+.amp-article-image-caption p,
+.amp-article-video-caption p,
+.amp-article-audio-caption p,
+.amp-article-pubdate,
+.amp-article-author-name {
+  font-size: 0.694em;
+  letter-spacing: 0;
+}
+
+.tiny-font {
+  font-size: 0.579em;
+}
+
+/* @group end */
+
+/* @group general */
+
+body {
+  background: #f2f2f2;
+  font-family: "Avenir Next", Avenir, Roboto, "Segoe WP", Arial, sans-serif;
+  font-weight: 400;
+  letter-spacing: -0.0125em;
+  line-height: 1.45;
+  color: #666;
+}
+
+.website {
+  width: 100vw;
+  max-width: 768px;
+  margin: 0 auto;
+  background: #fff;
+  position: relative;
+}
+
+.website-header {
+  background: #111;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 2vh 4vw;
+  box-sizing: border-box;
+  max-height: 12vh;
+}
+
+.site-title {
+  margin: 0;
+  font-size: 0.833em;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #f7f7f7;
+}
+
+.site-title a {
+  color: #f7f7f7;
+  text-decoration: none;
+}
+
+.amp-view-original {
+  font-size: 0.579em;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-align: right;
+  white-space: nowrap;
+  color: #666;
+}
+
+.amp-view-original a {
+  color: #666;
+  text-decoration: none;
+}
+
+/* @group end */
+
+/* @group amp article */
+
+.amp-article-content {
+  padding-bottom: 4vh;
+  box-sizing: border-box;
+}
+
+.amp-article-main-image {
+  max-width: 100%;
+}
+
+.amp-article-header {
+  margin-top: 4vh;
+}
+
+.amp-article-header,
+.amp-article-footer,
+.amp-article-html-block,
+.amp-article-markdown-block,
+.amp-article-image-caption,
+.amp-article-video-caption,
+.amp-article-quote-block,
+.amp-article-audio-block,
+.amp-article-embed-block.twitter-tweet {
+  margin-left: 4vw;
+  margin-right: 4vw;
+}
+
+.amp-article-title {
+  letter-spacing: -0.0325em;
+}
+
+.amp-article-image-block,
+.amp-article-video-block {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.amp-article-pubdate,
+.amp-article-author-name,
+.amp-article-image-caption,
+.amp-article-video-caption,
+.amp-article-audio-caption,
+.amp-article-quote-block-source {
+  color: #999;
+}
+
+.amp-article-pubdate,
+.amp-article-author-name {
+  display: inline-block;
+  letter-spacing: 0.02em;
+}
+
+.amp-article-pubdate + .amp-article-author-name:before,
+.amp-article-audio-title + .amp-article-audio-author:before {
+  content: ' by ';
+}
+
+.amp-article-audio-title {
+  font-style: italic;
+}
+
+.amp-article-quote-block {
+  margin-top: 1.45em;
+  margin-bottom: 1.45em;
+}
+
+.amp-article-quote-block-text {
+  font-size: 1.2em;
+  font-style: italic;
+  line-height: 1.2;
+  color: #111;
+  margin: 0;
+  padding: 0;
+  border-left-width: 0px;
+}
+
+.amp-article-quote-block-source {
+  margin-top: 0.833em;
+  display: block;
+}
+
+.amp-article-audio-caption p {
+  margin-top: 0.5em;
+  display: block;
+}
+
+amp-img {
+  background-color: #f7f7f7;
+  max-width: 100%;
+}
+
+.amp-article-hr-block {
+  height: 1px;
+  border: none;
+  margin: 2.6em 0;
+  color: #eee;
+  background-color: #eee;
+}
+
+.amp-article-placeholder-block {
+  background-color: rgba(0, 0, 0, 0.02);
+  margin: 1.45em;
+  padding: 1.45em;
+  text-align: center;
+}
+
+/* @group end */
+</style>
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Article",
+      "headline": "Theranos - lessons for fintechs  start-ups",
+      "mainEntityOfPage": "https://www.flagshipmarketing.com",
+      
+      "url": "https://www.flagshipmarketing.com/blog/theranos-lessons-for-fintechs-start-ups",
+      "author": {
+        "@type": "Person",
+        "name": "Jamie Dalton"
+      },
+      "publisher": {
+        "@type": "Organization",
+        
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://images.squarespace-cdn.com/content/v1/5f983681a3b29f646dbd85fe/1603820681616-WCX3DXJ8BSUAEDCH3SPI/white_logo_transparent_background.png",
+          "width": 2500,
+          "height": 1070
+        },
+        
+        "name": "Financial Services Marketing Agency | Flagship Marketing Ltd."
+      },
+      
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://images.squarespace-cdn.com/content/v1/5f983681a3b29f646dbd85fe/1604397696668-QFH610XD684CCKS6EIXT/Theranos+lessons+for+fintech+startups.png?format=750w",
+        "width": 760,
+        "height": 534
+      },
+      
+      "datePublished": "2020-10-30",
+      "dateModified": "2020-11-17"
+    }
+  </script>
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  
+</head>
+<body>
+  <div id="page" class="website">
+
+    <header class="website-header">
+      <h1 class="site-title"><a href="../home/index.html" target="_blank">Financial Services Marketing Agency | Flagship Marketing Ltd.</a></h1>
+      <small class="amp-view-original"><a href="theranos-lessons-for-fintechs-start-ups.html" target="_blank">View Original</a></small>
+    </header>
+
+    <article id="content" class="amp-article-content">
+      
+        <amp-img
+          class="amp-article-main-image"
+          layout="responsive"
+          width="760"
+          height="534"
+          src="https://images.squarespace-cdn.com/content/v1/5f983681a3b29f646dbd85fe/1604397696668-QFH610XD684CCKS6EIXT/Theranos+lessons+for+fintech+startups.png?format=500w"
+          srcset="https://images.squarespace-cdn.com/content/v1/5f983681a3b29f646dbd85fe/1604397696668-QFH610XD684CCKS6EIXT/Theranos+lessons+for+fintech+startups.png?format=2500w 2500w,
+          https://images.squarespace-cdn.com/content/v1/5f983681a3b29f646dbd85fe/1604397696668-QFH610XD684CCKS6EIXT/Theranos+lessons+for+fintech+startups.png?format=1500w 1500w,
+          https://images.squarespace-cdn.com/content/v1/5f983681a3b29f646dbd85fe/1604397696668-QFH610XD684CCKS6EIXT/Theranos+lessons+for+fintech+startups.png?format=1000w 1000w,
+          https://images.squarespace-cdn.com/content/v1/5f983681a3b29f646dbd85fe/1604397696668-QFH610XD684CCKS6EIXT/Theranos+lessons+for+fintech+startups.png?format=750w 750w,
+          https://images.squarespace-cdn.com/content/v1/5f983681a3b29f646dbd85fe/1604397696668-QFH610XD684CCKS6EIXT/Theranos+lessons+for+fintech+startups.png?format=500w 500w,
+          https://images.squarespace-cdn.com/content/v1/5f983681a3b29f646dbd85fe/1604397696668-QFH610XD684CCKS6EIXT/Theranos+lessons+for+fintech+startups.png?format=300w 300w,
+          https://images.squarespace-cdn.com/content/v1/5f983681a3b29f646dbd85fe/1604397696668-QFH610XD684CCKS6EIXT/Theranos+lessons+for+fintech+startups.png?format=100w 100w"
+          sizes="100vw">
+        </amp-img>
+      
+
+      <header class="amp-article-header">
+        <h1 class="amp-article-title">Theranos - lessons for fintechs  start-ups</h1>
+        <div class="amp-article-meta">
+          <time class="amp-article-pubdate" datetime="2020-10-30">
+            October 30, 2020
+          </time>
+          <small class="amp-article-author-name">Jamie Dalton</small>
+        </div>
+      </header>
+
+      
+
+
+
+<div class="amp-article-html-block"><p class=""><em>&quot;Innovators who seek to revolutionise and disrupt an industry must tell investors the truth about what their technology can do today - not just what they hope it might do someday&quot;</em></p>
+<p class="">Jina Choi, director of the SEC in San Francisco laid down the law as the founder of a US MedTech start-up was charged with raising funding fraudulently. The entrepreneur is Elizabeth Holmes and her company is Theranos, a firm that enticed investors to the tune of $700 million over claims that its new technologies would transform the blood testing industry.</p>
+<h3>Where did Theranos cross the line?</h3>
+<p class="">The truth was, the technology didn’t work, or at least didn’t work well enough. Somewhere, Holmes crossed a line when pitching to investors. Did she lie? Not entirely, she had a system called Edison which could analyse blood samples, but we are now learning that it couldn’t do everything as well as she claimed.</p>
+<p class="">Was it then an exaggeration? Clearly it wasn’t just a bit of sales spin, or she wouldn’t be facing a negotiated settlement of $500,000 plus 19 million shares in her company, ending control of her own empire. The SEC have called it “a massive fraud”.</p>
+<p class="">But she wasn’t just seeking to trouser the loot and run either. She set up a real business and employed hundreds of people; the Food and Drug Administration approved one of her products; she partnered with giant multinationals.</p>
+<p class="">The truth seems to be that she had a great idea, tested it and ran with it for years before seeking funding, but as we see from the SEC quote, she claimed that the funding was to support a product that could <em>already </em>do the things she described in her pitch, rather than admitting that the product was not there yet, and that funding would be needed to develop it further. That’s called misleading your investors and it’s a bad place to be.</p>
+<h3>Lessons for fintech</h3>
+<p class="">What can we learn from this in the fintech industry? We have already noted how more<a href="the-fintech-movement-changes-in-a-maturing-market.html"> funding is being targeted at established fintechs rather than new start-ups</a>, and how the fintech bubble is attracting more and more copycat firms.</p>
+<p class="">Increasing competition means there is a need for fintechs to get their message out, to sell harder, but never at the risk of crossing a line and of misleading investors. I’m not suggesting for a moment that the risk will lead to the consequences faced by Theranos. That was fraud on a rare scale. But the pertinent point is that anything less than scrupulous honesty and transparency with investors, will damage your reputation and your prospects.</p>
+<h3>But doesn’t everyone do it a bit?</h3>
+<p class="">I doubt it, and what if they do? Despite the Theranos story, investors are good at due diligence so don't take a chance. Depending on how investors see the risk of investing, the terms of their funding may be different, but once on board they will know exactly what the situation is and can support accordingly. Remember, if any investor believes in you enough to provide funding, they have skin in the game, a vested interest in your success. And even if they don't take you on, that's disappointing, but it's also incredible feedback that could save you a great deal of money and stress.</p>
+<h3>Get the basics right – it works</h3>
+<p class="">To set up any investor relationship, we must go back to first principles – Value Proposition and Business Model. Who are your customers? What is your unique (<em>not</em> copycat) value to each of your target segments? How can you deliver it? What will it cost?</p>
+<p class="">If you have a Value Proposition that is truly distinctive, that is relevant to customer groups that you have researched and understood, and a Business Model that is robust and credible, there’s no need to exaggerate, even a little. And that’s a good thing, because your reputation as a scrupulously honest business is far too important to risk.</p>
+<p class=""><em>Flagship Marketing Limited &reg; is a marketing agency helping fintech companies grow their businesses. To learn more about what we do, contact us on </em><a href="mailto:info@flagshipmarketing.com"><span><em>info@flagshipmarketing.com</em></span></a><em> or though our </em><a href="../contact-us.html">contact page</a></p></div>
+
+
+      <footer class="amp-article-footer">
+        <p class="amp-article-original-source">
+          Discover more from <a href="../blog.html" target="_blank"><em>Financial Services Marketing Agency | Flagship Marketing Ltd.</em></a>
+        </p>
+      </footer>
+
+    </article>
+  </div>
+</body>
+</html>

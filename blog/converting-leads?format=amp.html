@@ -1,0 +1,474 @@
+<!doctype html>
+<html amp>
+<head>
+  <title>Converting Leads</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1">
+  <link rel="canonical" href="converting-leads.html">
+  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+  <style amp-custom>/* @group type scale */
+
+body {
+  font-size: 1em;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+p, ul, ol, blockquote {
+  margin-top: 1.45em;
+  margin-bottom: 1.45em;
+}
+
+blockquote {
+  font-style: italic;
+  color: #888;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 1.414em;
+  border-left: 1px solid #eee;
+}
+
+h1, h2, h3, h4 {
+  margin: 1.414em 0 0.5em;
+  font-weight: inherit;
+  line-height: 1.2;
+  color: #111;
+}
+
+h1 {
+  font-size: 2.074em;
+}
+
+h2 {
+  font-size: 1.728em;
+}
+
+h3 {
+  font-size: 1.44em;
+}
+
+h4 {
+  font-size: 1.2em;
+}
+
+blockquote,
+.amp-article-quote-block-source,
+.amp-article-original-source {
+  font-size: 0.833em;
+}
+
+.amp-article-image-caption p,
+.amp-article-video-caption p,
+.amp-article-audio-caption p,
+.amp-article-pubdate,
+.amp-article-author-name {
+  font-size: 0.694em;
+  letter-spacing: 0;
+}
+
+.tiny-font {
+  font-size: 0.579em;
+}
+
+/* @group end */
+
+/* @group general */
+
+body {
+  background: #f2f2f2;
+  font-family: "Avenir Next", Avenir, Roboto, "Segoe WP", Arial, sans-serif;
+  font-weight: 400;
+  letter-spacing: -0.0125em;
+  line-height: 1.45;
+  color: #666;
+}
+
+.website {
+  width: 100vw;
+  max-width: 768px;
+  margin: 0 auto;
+  background: #fff;
+  position: relative;
+}
+
+.website-header {
+  background: #111;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 2vh 4vw;
+  box-sizing: border-box;
+  max-height: 12vh;
+}
+
+.site-title {
+  margin: 0;
+  font-size: 0.833em;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #f7f7f7;
+}
+
+.site-title a {
+  color: #f7f7f7;
+  text-decoration: none;
+}
+
+.amp-view-original {
+  font-size: 0.579em;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-align: right;
+  white-space: nowrap;
+  color: #666;
+}
+
+.amp-view-original a {
+  color: #666;
+  text-decoration: none;
+}
+
+/* @group end */
+
+/* @group amp article */
+
+.amp-article-content {
+  padding-bottom: 4vh;
+  box-sizing: border-box;
+}
+
+.amp-article-main-image {
+  max-width: 100%;
+}
+
+.amp-article-header {
+  margin-top: 4vh;
+}
+
+.amp-article-header,
+.amp-article-footer,
+.amp-article-html-block,
+.amp-article-markdown-block,
+.amp-article-image-caption,
+.amp-article-video-caption,
+.amp-article-quote-block,
+.amp-article-audio-block,
+.amp-article-embed-block.twitter-tweet {
+  margin-left: 4vw;
+  margin-right: 4vw;
+}
+
+.amp-article-title {
+  letter-spacing: -0.0325em;
+}
+
+.amp-article-image-block,
+.amp-article-video-block {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.amp-article-pubdate,
+.amp-article-author-name,
+.amp-article-image-caption,
+.amp-article-video-caption,
+.amp-article-audio-caption,
+.amp-article-quote-block-source {
+  color: #999;
+}
+
+.amp-article-pubdate,
+.amp-article-author-name {
+  display: inline-block;
+  letter-spacing: 0.02em;
+}
+
+.amp-article-pubdate + .amp-article-author-name:before,
+.amp-article-audio-title + .amp-article-audio-author:before {
+  content: ' by ';
+}
+
+.amp-article-audio-title {
+  font-style: italic;
+}
+
+.amp-article-quote-block {
+  margin-top: 1.45em;
+  margin-bottom: 1.45em;
+}
+
+.amp-article-quote-block-text {
+  font-size: 1.2em;
+  font-style: italic;
+  line-height: 1.2;
+  color: #111;
+  margin: 0;
+  padding: 0;
+  border-left-width: 0px;
+}
+
+.amp-article-quote-block-source {
+  margin-top: 0.833em;
+  display: block;
+}
+
+.amp-article-audio-caption p {
+  margin-top: 0.5em;
+  display: block;
+}
+
+amp-img {
+  background-color: #f7f7f7;
+  max-width: 100%;
+}
+
+.amp-article-hr-block {
+  height: 1px;
+  border: none;
+  margin: 2.6em 0;
+  color: #eee;
+  background-color: #eee;
+}
+
+.amp-article-placeholder-block {
+  background-color: rgba(0, 0, 0, 0.02);
+  margin: 1.45em;
+  padding: 1.45em;
+  text-align: center;
+}
+
+/* @group end */
+</style>
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Article",
+      "headline": "Converting Leads",
+      "mainEntityOfPage": "https://www.flagshipmarketing.com",
+      
+      "url": "https://www.flagshipmarketing.com/blog/converting-leads",
+      "author": {
+        "@type": "Person",
+        "name": "Jamie Dalton"
+      },
+      "publisher": {
+        "@type": "Organization",
+        
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://images.squarespace-cdn.com/content/v1/5f983681a3b29f646dbd85fe/1603820681616-WCX3DXJ8BSUAEDCH3SPI/white_logo_transparent_background.png",
+          "width": 2500,
+          "height": 1070
+        },
+        
+        "name": "Financial Services Marketing Agency | Flagship Marketing Ltd."
+      },
+      
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://images.squarespace-cdn.com/content/v1/5f983681a3b29f646dbd85fe/1612973063378-QS9WFFBMQDSTML7M9ZZY/handshake.jpg?format=750w",
+        "width": 500,
+        "height": 334
+      },
+      
+      "datePublished": "2020-10-30",
+      "dateModified": "2021-02-10"
+    }
+  </script>
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  
+</head>
+<body>
+  <div id="page" class="website">
+
+    <header class="website-header">
+      <h1 class="site-title"><a href="../home/index.html" target="_blank">Financial Services Marketing Agency | Flagship Marketing Ltd.</a></h1>
+      <small class="amp-view-original"><a href="converting-leads.html" target="_blank">View Original</a></small>
+    </header>
+
+    <article id="content" class="amp-article-content">
+      
+        <amp-img
+          class="amp-article-main-image"
+          layout="responsive"
+          width="500"
+          height="334"
+          src="https://images.squarespace-cdn.com/content/v1/5f983681a3b29f646dbd85fe/1612973063378-QS9WFFBMQDSTML7M9ZZY/handshake.jpg?format=500w"
+          srcset="https://images.squarespace-cdn.com/content/v1/5f983681a3b29f646dbd85fe/1612973063378-QS9WFFBMQDSTML7M9ZZY/handshake.jpg?format=2500w 2500w,
+          https://images.squarespace-cdn.com/content/v1/5f983681a3b29f646dbd85fe/1612973063378-QS9WFFBMQDSTML7M9ZZY/handshake.jpg?format=1500w 1500w,
+          https://images.squarespace-cdn.com/content/v1/5f983681a3b29f646dbd85fe/1612973063378-QS9WFFBMQDSTML7M9ZZY/handshake.jpg?format=1000w 1000w,
+          https://images.squarespace-cdn.com/content/v1/5f983681a3b29f646dbd85fe/1612973063378-QS9WFFBMQDSTML7M9ZZY/handshake.jpg?format=750w 750w,
+          https://images.squarespace-cdn.com/content/v1/5f983681a3b29f646dbd85fe/1612973063378-QS9WFFBMQDSTML7M9ZZY/handshake.jpg?format=500w 500w,
+          https://images.squarespace-cdn.com/content/v1/5f983681a3b29f646dbd85fe/1612973063378-QS9WFFBMQDSTML7M9ZZY/handshake.jpg?format=300w 300w,
+          https://images.squarespace-cdn.com/content/v1/5f983681a3b29f646dbd85fe/1612973063378-QS9WFFBMQDSTML7M9ZZY/handshake.jpg?format=100w 100w"
+          sizes="100vw">
+        </amp-img>
+      
+
+      <header class="amp-article-header">
+        <h1 class="amp-article-title">Converting Leads</h1>
+        <div class="amp-article-meta">
+          <time class="amp-article-pubdate" datetime="2020-10-30">
+            October 30, 2020
+          </time>
+          <small class="amp-article-author-name">Jamie Dalton</small>
+        </div>
+      </header>
+
+      
+
+
+
+<div class="amp-article-html-block"><p class="">We are drowning in prose. And videos. Infographics. GIFs. Top companies are blogging once a day or more. Nobody can cope with the volume and with the noise, so what’s going on? Is it possible to compete in the cacophony - in short, does all this noise produce results?</p>
+<h3>Does it all work?</h3>
+<p class="">Well, according to <a href="https://www.zazzlemedia.co.uk/blog/state-of-content-marketing-2019/#gref"><span>the State of Content Marketing Survey</span></a> published by Zazzle Media, marketers think all this noise is working very well, thank you. The definition of a good marketing survey is that it makes you think and challenges you with new insights, and the Zazzle survey does that.</p>
+<p class="">Zazzle talked to “thousands of marketing decision-makers” to get these results, and so it is hardly surprising that we’re bombarded by content. It doesn’t seem to matter – content is working for a very large number of organisations.47% think that their content marketing is very effective. Not bad! 31% think it is somewhat effective. OK. And 19% think it is extremely effective. That’s really very good. If you add together all the respondents to this survey who think their content marketing is effective it comes to a whopping 96%.</p>
+<h3>What does ‘work’ mean?</h3>
+<p class="">It’s all very well to say that content marketing is working well for so many people, but what does that really mean?</p>
+<p class="">And here’s the piece in this intriguing survey I found really interesting. How do the respondents measure success?</p>
+<p class="">Only 51% want their marketing to increase sales, whilst more than 80% want to increase website traffic. The website numbers are a vital part of the process – the more people you can talk to the more people you can ultimately convert to customers, that’s what content marketing is, but generating website traffic is relatively easy – especially at the top of funnel. The harder thing is to nurture those contacts, developing trust along the way until you can hand them over as marketing qualified leads at the end. That’s when marketing has done its job and the sales teams can take those leads and convert them into customers.</p>
+<h3>Metrics that hurt</h3>
+<p class="">If only 51% of thousands of marketing decision-makers want to increase sales and are prepared to be accountable for those number, a lot of sales teams are going to be missing out on a steady flow of marketing qualified leads. It is they who will spend their time prospecting and lead nurturing instead of the marketing teams.</p>
+<p class="">It speaks volumes to the problems sales and marketing teams have with each other, why they think marketers are only good for brochureware and events, and it raises the question, “What do the other half hope to achieve if only 51% are looking to increase their conversion rates through content marketing?”</p>
+<p class="">Remember, this is an activity that 96% of respondents say is an effective strategy for their business. It is therefore not surprising that 73% of executives do not believe that marketing drives demand and revenue.</p>
+<p class="">We’ve <a href="../s/7-Metrics-that-show-the-value-of-your-marketing.pdf">written about this</a> before and the reason we emphasise it so much is because it is the foundation of the marketing team’s reputation. As long as marketers insist on being accountable just for the process rather than the outcomes, CEOs will be justifiably sceptical about the value of marketing and marketers.</p>
+<p class="">Goals for marketing campaigns</p>
+<p class="">The issue becomes even more interesting in <a href="https://cdn2.hubspot.net/hubfs/3476323/State%20of%20Inbound%202018%20Global%20Results.pdf"><span>HubSpot’s State of Inbound Survey, 2018.</span></a> In the latest version of this annual survey, HubSpot asked respondents to list the priorities from their marketing campaigns. The top answer (with 69%) was to increase the number of conversions from contacts or leads into customers.</p>
+<p class="">In response, HubSpot comments that BoFU (bottom of funnel) content is critical. This the place in the buyer journey where they are ready to make a decision about what to buy to solve their problem.</p>
+<p class="">And there we have it. We want to increase conversions, to improve ROI and to contribute to real business goals, but many of us are measuring and reporting the first steps in the process, not the much more difficult bottom of funnel metrics.</p>
+<h3>So, what now?</h3>
+<p class="">Now, we need to develop strategies that address contacts at the bottom of funnel, but first we need to understand how the buyer journey works and what we mean by bottom of funnel.</p>
+<p class="">Against this paradigm, HubSpot describes 3 stages in the buyer journey (see graphic). The awareness stage, the consideration stage and the decision stage. The decision stage is the only stage where you can measure an increase in sales. It’s what is happening at this stage that the CEO and those others responsible for the health of your business want to know about. The buyer journey has changed with the advent of search engines. Today buyers can research their own solutions without going to suppliers at all. That means buyers have more power than before. They have more choice because they are not limited by physical location and they have access to client opinion so do not need to talk to a salesperson until they are ready to purchase.</p>
+<p class="">That doesn’t mean you shouldn’t be concerned if website traffic is low; if you have no pipeline; if prospects are not responding to you even at the awareness stage. That’s a fundamental signal that something might be very wrong with the business and should be flagged quickly.</p>
+<p class="">Here we are talking about when marketers focus only on the top of funnel numbers because those are easy to hit and only 51% dare to be accountable for the decision stage. That’s a problem about purpose, courage and maybe skills that will cause marketing to become discounted and overlooked in the minds of the C suite.</p>
+<h3>Nurturing your leads</h3>
+<p class="">If a prospect has understood his or her problem and has researched the various approaches that might help, and has opted for one of those strategies, then he is at the bottom of the sales funnel or at stage three of the buyer journey.</p>
+<blockquote>
+ <p class="">However, we need to take a step back and look at our prospects at the consideration phase, because this is where we start to position ourselves in preparation for the bottom of funnel activities.</p>
+</blockquote>
+<p class="">The consideration stage or 'Middle of Funnel' is the most complex stage because of the variety of leads in the mix, who have expressed an interest in your company, but haven’t yet been qualified.</p>
+<p class="">A person moves from top of funnel to middle of funnel (or awareness to consideration) at the moment they do something to show engagement with your product or services, but they are far from ready to buy. Look at our own case study.</p>
+<h3>Watch out for people who don’t follow your conversion path</h3>
+<p class="">At this point, it is worth saying a word about people who don’t follow the path you have mapped out for them. It can happen, and you need to be alert to capture the opportunity.</p>
+<p class="">To that point, I have just in the last two minutes received a phone call from a very organised marketing department who are promoting webinar services. Yesterday I downloaded an eBook on webinar ideas from a company who didn’t know it, but we are actually in the market for a new webinar platform.</p>
+<p class="">We’ve used a lot of platforms in the past ranging from small DIY apps to enterprise-level ecosystems, so we were not novices, but we might have appeared to be so because we downloaded a simple top-of-funnel eBook on how to conduct webinars.</p>
+<p class="">Fortunately, the company phoned me, understood quickly that I was not a top of funnel prospect and moved me quickly to the bottom of funnel with the offer of a demo and a discount. I may not buy from them, but I am impressed with their savvy, and if I do, I’ll let everyone know.</p>
+<h3>Our own case-study</h3>
+<p class="">We have recently run an ad campaign on LinkedIn designed to bring people in at top of funnel and love them to the middle of funnel. We have assumed that they have a problem and they are looking to understand that problem better.</p>
+<p class="">In order to attract them, we have offered them a selection of practical educational content and a series of workbooks to put their education into practice. In fact, the educational content alone may have been enough for the true top of funnel prospects – including the practical workbooks allows the prospects to explore a solution set, which means they are already looking at middle of funnel.</p>
+<p class="">Both the prospects that wanted the educational pieces and those that wanted the workbooks have now shown an interest in us, but we don’t know where they are on the journey and what their intentions are.</p>
+<p class="">So the next step is for us to ask them what they thought of our content and invite them to tell us something about its value to them. It’s a low commitment for them, but one that is extremely useful for us in beginning to separate this group into different levels of interest.</p>
+<h3>Middle of Funnel approach</h3>
+<p class="">We work on the basis that there are three characteristics common to all Middle of Funnel prospects:</p>
+<ol data-rte-list="default">
+ <li><p class="">They have shown an interest in your product service or company by taking an action</p></li>
+ <li><p class="">They have left you with the means to contact them and permission to do so. (This may not always be true, but it is the most useful working model for this group.)</p></li>
+ <li><p class="">They are exploring a range of options to a known problem, e.g. recruit an expert, outsource the problem, upskill existing staff, carry on as today.</p></li>
+</ol>
+<p class="">This final point is the key because although they are not ready to buy, they are ready to understand more about your services and for you to position your company to them.</p>
+<h3>Positioning your company for Middle of Funnel Prospects</h3>
+<p class="">The key thing that sets you apart from everyone else is your value proposition. The subject is worth a blog and several workshops in its own right, so for now, let me share our value proposition and talk a bit about the principles behind it.</p>
+<h3>Our own value proposition</h3>
+<blockquote>
+ <p class="">We believe in FinTech firms are making the financial industry better for everyone Flagship Marketing is a specialist digital and content marketing agency focused on building profitable returns for FinTech firms as they transform the financial services industry. We do this through more than 30 years of study and practice in financial services, digital and content marketing and through the insights of managing our own start-up firms from the 1980s till today.</p>
+</blockquote>
+<p class="">Very simply – what is the promise you hold out to your customers? Who are they? How do you distinguish yourself from others – even if your product or service is not really unique?</p>
+<p class="">Make sure this is clearly on your website, in your literature and wherever your Middle of Funnel prospects are trying to find out a bit more about you.</p>
+<h3>Put on your prospect’s head</h3>
+<p class="">Yep, we could have said shoes or moccasins but everyone says that, and we want you to think like your buyer, not dress up like him or her.</p>
+<p class="">So where is your prospect’s head, what are they thinking now?</p>
+<p class="">They are considering alternative strategies to solve a problem. Our customers probably are facing problems like this.</p>
+<blockquote>
+ <p class=""><em>We’ve got some investment, hired a team and we’ve been selling our killer</em> <strong><em>FinTech</em></strong> <em>app. But, although lots of people are engaging and liking what we do, we can’t get enough to bite. We could discount our prices, or offer a different deal, but we’re not sure what the best, most sustainable approach is.</em> Or <em>We’ve also built our product in a competitive space, and we just can’t get heard over the noise of the big boys, even though our product is cheaper and an all-round-better-deal for our target market. We could take on a agency to help generate leads, but I’m not sure – or we could hire more sales staff which is an option I like, or we could maybe partner with someone bigger to get the visibility we need. Not sure.</em> Or <em>We’re just swamped, we’re a small team and we’re having to choose between serving our existing clients who are very demanding or prospecting for more. We’ve tried to keep the team lean as we’re not comfortable with taking on more fixed costs at this stage, but we may have to recruit if we can’t find another way. Maybe some tech could help but I’m no expert.</em></p>
+</blockquote>
+<p class="">These are the kinds of issues your prospects are facing at the middle of funnel stage. They’re very uncomfortable because they are in an undecided place, facing dilemmas that seem to have no solutions or too many possible solutions, and nothing is really clear for them yet.</p>
+<h3>Now give them some answers.</h3>
+<p class="">PS the answer is you, but you can’t be that direct yet.</p>
+<ul data-rte-list="default">
+ <li><p class="">Your prospect is looking for guidance, so offer him…guidebooks. At this stage, your prospect is in serious research mode so rich content that can explain how you and others would approach the problem. Don’t push towards a sale, but educate and help your prospect towards an answer to the question, what approach am I going to take?</p></li>
+ <li><p class="">Comparisons – here’s a bold one, but it is exactly what your prospect needs at this stage. Look at the possible routes your prospect may take – recruitment, employing an agency, buying some technology, and compare the options to showcase your strengths.</p></li>
+ <li><p class="">A really powerful option here is case studies. If you have great case studies of your won, that’s really great, but even if you don’t you can often find industry case studies that speak to the same point. Anyone who can say, “I was suffering the same conundrum as you are, Mr. Prospect, and I tried this and it worked superbly for me, (or, I tried something else, or everything else but the problem just got worse until I tried your solution). That sort of testimonial is so compelling especially if backed up by statistics and other proof points.</p></li>
+</ul>
+<h3>Get Personal</h3>
+<p class="">Remember, the great advantage you have over top of funnel prospectors is that you know this person. They’ve given you their name, hopefully, their email address and permission to get in touch. At this point you’re not intruding; you’re helping them in their research.</p>
+<p class="">Remember at the beginning of this blog we talked about drowning in prose and so on? If you use the invitation you have been given – to be in touch by email or even by phone, you cut away a huge amount of that noise, and you can have a more focused conversation away from the tumult of the web.</p>
+<p class="">As long as you remain personal and helpful your communications should normally be welcome. However, that will quickly change as you try to move too quickly to a ‘pushy’ sales approach before your prospect is ready. However, all the tile you are in this lead nurturing phase you are building credibility, authority and trust in the mind of your buyer.</p>
+<h3>Bottom of Funnel Prospects</h3>
+<p class="">And so finally we have arrived at the place we wanted to be – the bottom of funnel. It has taken a long time, but we have built a reputation along the way as a careful, nurturing organisation, with broad and deep knowledge and a willingness to be helpful and supportive. That’s why the complex and sometimes long middle of funnel phase is so important and why it is worth spending the time to master it.</p>
+<h3>How do we know when a prospect has moved from middle of funnel to bottom of funnel?</h3>
+<p class="">This is not easy, and your prospect is probably not going to tell you “oops! I’ve just slipped from the middle to the bottom of your funnel”, so you have to judge it. They might, of course, give you a strong buying signal – asking about the best price or something similar, but many won’t.</p>
+<p class="">If you have been helpful to your customer, taken the time to educate, guide, anticipate and answer questions, all the time positioning your own solution in the best possible light, you should not wait.</p>
+<h3>So, now what do we do?</h3>
+<p class="">There is still more for the markets to do, more information to give to get your prospect over the line.</p>
+<h3>Qualify your lead</h3>
+<p class="">One of the most important things to do is to decide if this lead is a good fit for your organisation. It’s late in the day, I know, but you can really only do this when you get to know them better, so it is possible to take this step when you are still in the middle of funnel phase, but here is the last chance.</p>
+<p class="">We’ve written about this and provided a <a href="../s/B2B-Prospect-Fit-Evaluation-Worksheet.xlsx">prospect evaluation worksheet</a> to look at your leads and start to qualify them.</p>
+<p class="">We invite you to look at how good a fit your product is for their problem; whether they are big enough to buy the level of service you are offering, and whether you are big enough to meet their needs.</p>
+<p class="">There is nothing worse than having an unhappy customer who might ruin your reputation, and where you can put a serious hole in his business plans, so don’t skip this step, it is very important.</p>
+<h3>BoFU content</h3>
+<p class="">Do you still need to provide content at this stage? Well, you need to provide something, but not the same educational content that you prepared earlier in the client journey.</p>
+<p class="">Remember the prospect doesn’t need to speak to you right until the last minute – if at all. I can create a book an ad campaign on LinkedIn that may cost thousands of pounds or dollars, and I can do the whole thing without speaking to anyone at all.</p>
+<p class="">How does LinkedIn tempt me in, and how does it convince me that I’m better with them than with Facebook (bigger and cheaper) Instagram, YouTube, Google Ads, Twitter and so on?</p>
+<p class="">It’s not by sending a salesperson to my business or my home. It’s by creating the content that convinces me they have a special niche in the social media ecosystem, and that my needs are best served by the type of people who have LinkedIn accounts.</p>
+<ul data-rte-list="default">
+ <li><p class="">Case studies still work well here to distinguish you from the others, and those sites that have galleries of client reviews are compelling</p></li>
+ <li><p class="">Offers become very important now</p></li>
+ <li><p class="">free trial</p></li>
+ <li><p class="">special invitation to an event, webinar,</p></li>
+ <li><p class="">advance access to thought leadership</p></li>
+ <li><p class="">membership or a personalised logon to an information portal</p></li>
+ <li><p class="">free audit</p></li>
+ <li><p class="">live demonstration</p></li>
+ <li><p class="">Continuing engagement with helpful guides by email</p></li>
+</ul>
+<h3>MQL, SQL, SLA…?</h3>
+<p class="">And the question is, once the prospect is engaging with all of this, when, if ever, do you hand him or her over to sales.</p>
+<p class="">Largely this is up to your organisation, but the one non-negotiable is that there should be a Service Level Agreement between marketing and sales which defines what a marketing qualified lead is, and how it should be handed over to the sales team.</p>
+<h3>Funnel Position</h3>
+<p class="">Clearly, the position in the funnel will be important. Do you hand over leads when they reach the middle of funnel? For most companies that would be too early, but for somewhere the sales value is very high and a lot of customised handholding is needed, it may be that this is the ideal point.</p>
+<h3>Qualification</h3>
+<p class="">Qualification should normally be done before handover, so wherever you intend to do your handover, make sure that you have done your qualification of a good fit prospect, first.</p>
+<h3>Lead Scoring</h3>
+<p class="">We haven’t talked about lead scoring, but, especially if you are using a marketing automation tool like HubSpot, this is a very consistent way of determining when to handover a lead to sales.</p>
+<p class="">Lead Scoring is not guesswork, but a data-driven activity. Look back over historical data to see what activities seem to be a trigger to closing. Even f you don’t have a lot of data, pick some standards and then test them over time.</p>
+<p class="">The frequency of visits to your site – especially to a services or pricing page may be one factor to consider. And it doesn’t have to be a sale that you measure. You can score any goal – attendees to a webinar, subscription to a newsletter, responding to an article. As long as you can see patterns in how these engagement points came about you should be able at least to give a score to them and refine it as you get more data.</p>
+<h3>Handover</h3>
+<p class="">At the point where your lead has been qualified and reached a certain score, it is time to hand it over to the sales team – but this has to be done seamlessly and carefully or all the good work can be lost. All this should be documented in the form of an agreement – an SLA between sales and marketing.</p>
+<p class="">The SLA should reflect the process and the responsibility of both teams. It is no good if marketing provides incomplete information or leads that really have not been thoroughly qualified. At the same time, it is entirely hopeless if sales ignore the leads and don’t follow up in the way that was expected.</p>
+<p class="">There are many marketing and sales SLA templates available and we will be producing our own in the next few days t help you do this.</p>
+<h3>Reporting</h3>
+<p class="">Now there is no need to report the top of funnel numbers to your C-suite or to your sales colleagues. Instead, you can provide metrics they care about. We have identified 7 key metrics that will bolster marketing reputations and really show where you are making the difference.</p>
+<h3>A Word on Funnels</h3>
+<p class="">We have talked extensively in this article about funnels and that’s because the concept of a sales funnel is well known and well-understood. However, funnels don’t do justice to the whole picture, and a few years ago HubSpot came up with a new concept – the flywheel and changed their whole business strategy to work to this very different model.</p>
+<p class="">The problem with a funnel is that the customer becomes an objective or an outcome of a sales process, and not the centre of the business. And where this really matters is once the prospect has signed up and become a paying customer.</p>
+<p class="">The delight stage – existing customers who are happy and are prepared to act as advocates for your company, powers the attract and engage phases.</p>
+<p class="">In the latest <a href="https://cdn2.hubspot.net/hubfs/3476323/State%20of%20Inbound%202018%20Global%20Results.pdf" target="_blank"><span>HubSpot State of Inbound Survey (2018</span></a>) respondents said that they got information before making a purchase from a variety of sources:</p>
+<ul data-rte-list="default">
+ <li><p class="">Word of mouth referrals (55%)</p></li>
+ <li><p class="">Customer references (46%)</p></li>
+ <li><p class="">Media Articles (38%)</p></li>
+ <li><p class="">Vendor-authored materials (blogs etc) (38%)</p></li>
+ <li><p class="">…/</p></li>
+ <li><p class="">Salesperson (22%)</p></li>
+</ul>
+<p class="">That means if you nurture not only your leads but also your existing customers, they can become a more important force to attract new customers than sales. Given how difficult it is to prospect for new business, looking after your customers and building advocacy and referral programmes around them is a very good way not only to protect your business but to grow it.</p>
+<blockquote>
+ <p class=""><em>Thanks for reading and I hope it helps. If you want more help with any aspects of your marketing,</em> <a href="mailto:info@flagshipmarketing.com?subject=Marketing%20help"><span><em>drop me a line</em></span></a> <em>with your details and I’ll get straight back to you.</em> <em>Ian</em></p>
+</blockquote></div>
+
+
+      <footer class="amp-article-footer">
+        <p class="amp-article-original-source">
+          Discover more from <a href="../blog.html" target="_blank"><em>Financial Services Marketing Agency | Flagship Marketing Ltd.</em></a>
+        </p>
+      </footer>
+
+    </article>
+  </div>
+</body>
+</html>
