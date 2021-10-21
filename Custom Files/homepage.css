@@ -1,0 +1,34 @@
+/*
+Styling for the accordion effect on the Read More links of index.html
+Originally this styling was in-line on the ads-test-application-page.html due to the way
+Squarespace allows custom scripts to be placed on their pages.
+ */
+
+
+h1 {
+color:white;
+  text-shadow: 0px 0px 15px rgba(150, 150, 150, 1);
+}
+
+#sections > section:nth-child(1) > div.section-background {
+ background-size: 100% auto;
+ background-image: url("https://www.flagshipmarketing.com/s/tower-bridget-sunny-v3.webp");
+}
+
+#block-e225dd22ecd94c8b6c4c > div > p{
+text-shadow: 0px 0px 15px rgba(150, 150, 150, 1);
+color:white;
+}
+
+.ReadMore {
+font-size: 15px;
+text-align: center;
+
+}
+.ui-closed:after {
+  content:" More";
+}
+
+.ui-open:after {
+content:" Less";
+}
